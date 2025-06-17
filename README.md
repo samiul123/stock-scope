@@ -53,21 +53,21 @@ A comprehensive stock analysis platform built with **Next.js 15**, **FastAPI**, 
 - **Financial Modeling Prep API Key** (free tier available)
 
 ### 1. Clone the Repository
-\`\`\`bash
+```bash
 git clone <repository-url>
 cd stock-analytics-demo
-\`\`\`
+```
 
 ### 2. Frontend Setup (Next.js)
-\`\`\`bash
+```bash
 cd frontend
 npm install
 # or
 yarn install
-\`\`\`
+```
 
 ### 3. Backend Setup (FastAPI)
-\`\`\`bash
+```bash
 cd backend
 
 # Create virtual environment
@@ -81,7 +81,7 @@ source venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
-\`\`\`
+```
 
 ### 4. Environment Configuration
 
@@ -91,53 +91,53 @@ pip install -r requirements.txt
 3. Get your API key from the dashboard
 
 #### Set Environment Variables
-\`\`\`bash
+```bash
 # Backend (.env or export)
 export FMP_API_KEY=your_api_key_here
 
 # Frontend (optional - for custom API URL)
 export NEXT_PUBLIC_API_URL=http://localhost:8000
-\`\`\`
+```
 
 ## 🚀 Running the Application
 
 ### Option 1: Full Stack (Recommended)
 
 #### Terminal 1 - Start Backend Server
-\`\`\`bash
+```bash
 cd backend
 source venv/bin/activate  # On Windows: venv\\Scripts\\activate
 export FMP_API_KEY=your_api_key_here
 python main.py
-\`\`\`
+```
 
 The backend will start on: **http://localhost:8000**
 - API Documentation: http://localhost:8000/docs
 - Health Check: http://localhost:8000/api/health
 
 #### Terminal 2 - Start Frontend
-\`\`\`bash
+```bash
 cd frontend
 npm run dev
 # or
 yarn dev
-\`\`\`
+```
 
 The frontend will start on: **http://localhost:3000**
 
 ### Option 2: Frontend Only (Demo Mode)
-\`\`\`bash
+```bash
 cd frontend
 npm run dev
-\`\`\`
+```
 
 The application will work with fallback data when the backend is not available.
 
 ### Option 3: Docker (Backend)
-\`\`\`bash
+```bash
 cd backend
 docker-compose up -d
-\`\`\`
+```
 
 ## 📱 Usage
 
@@ -163,12 +163,12 @@ docker-compose up -d
 ### API Endpoints
 The backend provides these key endpoints:
 
-- \`GET /api/company/{ticker}\` - Company profile data
-- \`GET /api/stock-prices/{ticker}\` - Historical stock prices
-- \`GET /api/key-metrics/{ticker}\` - Financial metrics (TTM)
-- \`GET /api/financial-scores/{ticker}\` - Health scores
-- \`GET /api/analyst-estimates/{ticker}\` - Revenue projections
-- \`GET /api/financial-growth/{ticker}\` - Growth analysis
+- `GET /api/company/{ticker}` - Company profile data
+- `GET /api/stock-prices/{ticker}` - Historical stock prices
+- `GET /api/key-metrics/{ticker}` - Financial metrics (TTM)
+- `GET /api/financial-scores/{ticker}` - Health scores
+- `GET /api/analyst-estimates/{ticker}` - Revenue projections
+- `GET /api/financial-growth/{ticker}` - Growth analysis
 
 ### Fallback Data
 When the backend is unavailable, the frontend uses realistic fallback data for:
@@ -182,9 +182,9 @@ When the backend is unavailable, the frontend uses realistic fallback data for:
 
 ### Adding New Stock Tickers
 Update fallback data in:
-- \`frontend/app/api/company/[ticker]/route.ts\`
-- \`frontend/app/api/financials/[ticker]/route.ts\`
-- \`frontend/app/api/stock-prices/[ticker]/route.ts\`
+- `frontend/app/api/company/[ticker]/route.ts`
+- `frontend/app/api/financials/[ticker]/route.ts`
+- `frontend/app/api/stock-prices/[ticker]/route.ts`
 
 ### Styling and Themes
 - Built with **Tailwind CSS** and **shadcn/ui**
@@ -204,33 +204,33 @@ Charts use **Recharts** library with custom styling:
 ### Common Issues
 
 #### Backend Not Starting
-\`\`\`bash
+```bash
 # Check Python version
 python --version  # Should be 3.11+
 
 # Reinstall dependencies
 pip install --upgrade pip
 pip install -r requirements.txt
-\`\`\`
+```
 
 #### API Key Issues
-\`\`\`bash
+```bash
 # Verify API key is set
 echo $FMP_API_KEY
 
 # Test API directly
 curl "https://financialmodelingprep.com/api/v3/profile/AAPL?apikey=YOUR_KEY"
-\`\`\`
+```
 
 #### Frontend Build Issues
-\`\`\`bash
+```bash
 # Clear Next.js cache
 rm -rf .next
 npm run build
-\`\`\`
+```
 
 ### Logs and Debugging
-- Backend logs: \`backend/logs/\`
+- Backend logs: `backend/logs/`
 - Frontend console: Browser Developer Tools
 - API documentation: http://localhost:8000/docs
 
@@ -249,9 +249,9 @@ npm run build
 ## 🤝 Contributing
 
 1. Fork the repository
-2. Create a feature branch (\`git checkout -b feature/amazing-feature\`)
-3. Commit your changes (\`git commit -m 'Add amazing feature'\`)
-4. Push to the branch (\`git push origin feature/amazing-feature\`)
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
 ## 🙏 Acknowledgments
@@ -272,4 +272,3 @@ For support and questions:
 ---
 
 **Built with ❤️ for the financial analysis community**
-\`\`\`
