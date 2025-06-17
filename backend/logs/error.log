@@ -2787,3 +2787,568 @@
 2025-06-17 11:46:07,262 - fmp_api - INFO - FMP API RESPONSE: key-metrics-ttm - Status: 200 - Time: 0.533s
 2025-06-17 11:46:07,262 - stock_analytics - INFO - Successfully returned key metrics for NVDA
 2025-06-17 11:46:07,263 - requests - INFO - RESPONSE: GET http://localhost:8000/api/key-metrics/NVDA - Status: 200 - Time: 0.552s
+2025-06-17 12:39:42,591 - requests - INFO - REQUEST: GET http://localhost:8000/api/company/NVDA - Client: 127.0.0.1
+2025-06-17 12:39:43,120 - stock_analytics - INFO - Company profile requested for ticker: NVDA
+2025-06-17 12:39:43,125 - fmp_api - INFO - FMP API REQUEST: profile
+2025-06-17 12:39:43,925 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/profile?symbol=NVDA&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 12:39:43,982 - fmp_api - INFO - FMP API RESPONSE: profile - Status: 200 - Time: 0.856s
+2025-06-17 12:39:43,984 - stock_analytics - INFO - Successfully returned company profile for NVDA: NVIDIA Corporation
+2025-06-17 12:39:43,987 - requests - INFO - RESPONSE: GET http://localhost:8000/api/company/NVDA - Status: 200 - Time: 1.421s
+2025-06-17 12:39:44,010 - requests - INFO - REQUEST: GET http://localhost:8000/api/stock-prices/NVDA - Client: 127.0.0.1
+2025-06-17 12:39:44,011 - stock_analytics - INFO - Stock prices requested for ticker: NVDA, days: 30
+2025-06-17 12:39:44,012 - fmp_api - INFO - FMP API REQUEST: historical-price-eod/light
+2025-06-17 12:39:44,018 - requests - INFO - REQUEST: GET http://localhost:8000/api/key-metrics/NVDA - Client: 127.0.0.1
+2025-06-17 12:39:44,018 - stock_analytics - INFO - Key metrics requested for ticker: NVDA
+2025-06-17 12:39:44,018 - fmp_api - INFO - FMP API REQUEST: key-metrics-ttm
+2025-06-17 12:39:44,024 - requests - INFO - REQUEST: GET http://localhost:8000/api/financial-scores/NVDA - Client: 127.0.0.1
+2025-06-17 12:39:44,064 - stock_analytics - INFO - Financial scores requested for ticker: NVDA
+2025-06-17 12:39:44,065 - fmp_api - INFO - FMP API REQUEST: financial-scores
+2025-06-17 12:39:44,071 - requests - INFO - REQUEST: GET http://localhost:8000/api/analyst-estimates/NVDA?period=annual&limit=5 - Client: 127.0.0.1
+2025-06-17 12:39:44,072 - stock_analytics - INFO - Analyst estimates requested for ticker: NVDA, period: annual
+2025-06-17 12:39:44,072 - fmp_api - INFO - FMP API REQUEST: analyst-estimates
+2025-06-17 12:39:44,079 - requests - INFO - REQUEST: GET http://localhost:8000/api/financial-growth/NVDA?period=FY&limit=5 - Client: 127.0.0.1
+2025-06-17 12:39:44,079 - stock_analytics - INFO - Financial growth requested for ticker: NVDA, period: FY
+2025-06-17 12:39:44,079 - fmp_api - INFO - FMP API REQUEST: financial-growth
+2025-06-17 12:39:44,337 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/key-metrics-ttm?symbol=NVDA&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 12:39:44,338 - fmp_api - INFO - FMP API RESPONSE: key-metrics-ttm - Status: 200 - Time: 0.319s
+2025-06-17 12:39:44,338 - stock_analytics - INFO - Successfully returned key metrics for NVDA
+2025-06-17 12:39:44,338 - requests - INFO - RESPONSE: GET http://localhost:8000/api/key-metrics/NVDA - Status: 200 - Time: 0.320s
+2025-06-17 12:39:44,339 - requests - INFO - REQUEST: GET http://localhost:8000/api/key-metrics/NVDA - Client: 127.0.0.1
+2025-06-17 12:39:44,339 - stock_analytics - INFO - Key metrics requested for ticker: NVDA
+2025-06-17 12:39:44,339 - fmp_api - INFO - FMP API REQUEST: key-metrics-ttm
+2025-06-17 12:39:44,346 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/financial-growth?symbol=NVDA&period=FY&limit=5&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 12:39:44,346 - fmp_api - INFO - FMP API RESPONSE: financial-growth - Status: 200 - Time: 0.267s
+2025-06-17 12:39:44,346 - stock_analytics - INFO - Successfully returned 5 financial growth records for NVDA
+2025-06-17 12:39:44,347 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/analyst-estimates?symbol=NVDA&period=annual&limit=5&page=0&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 12:39:44,347 - fmp_api - INFO - FMP API RESPONSE: analyst-estimates - Status: 200 - Time: 0.275s
+2025-06-17 12:39:44,347 - requests - INFO - RESPONSE: GET http://localhost:8000/api/financial-growth/NVDA?period=FY&limit=5 - Status: 200 - Time: 0.269s
+2025-06-17 12:39:44,347 - stock_analytics - INFO - Successfully returned 5 analyst estimates for NVDA
+2025-06-17 12:39:44,348 - requests - INFO - RESPONSE: GET http://localhost:8000/api/analyst-estimates/NVDA?period=annual&limit=5 - Status: 200 - Time: 0.277s
+2025-06-17 12:39:44,348 - requests - INFO - REQUEST: GET http://localhost:8000/api/financial-growth/NVDA?period=FY&limit=5 - Client: 127.0.0.1
+2025-06-17 12:39:44,348 - stock_analytics - INFO - Financial growth requested for ticker: NVDA, period: FY
+2025-06-17 12:39:44,349 - fmp_api - INFO - FMP API REQUEST: financial-growth
+2025-06-17 12:39:44,355 - requests - INFO - REQUEST: GET http://localhost:8000/api/analyst-estimates/NVDA?period=annual&limit=5 - Client: 127.0.0.1
+2025-06-17 12:39:44,355 - stock_analytics - INFO - Analyst estimates requested for ticker: NVDA, period: annual
+2025-06-17 12:39:44,355 - fmp_api - INFO - FMP API REQUEST: analyst-estimates
+2025-06-17 12:39:44,395 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/financial-scores?symbol=NVDA&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 12:39:44,395 - fmp_api - INFO - FMP API RESPONSE: financial-scores - Status: 200 - Time: 0.331s
+2025-06-17 12:39:44,395 - stock_analytics - INFO - Successfully returned financial scores for NVDA
+2025-06-17 12:39:44,395 - requests - INFO - RESPONSE: GET http://localhost:8000/api/financial-scores/NVDA - Status: 200 - Time: 0.371s
+2025-06-17 12:39:44,396 - requests - INFO - REQUEST: GET http://localhost:8000/api/financial-scores/NVDA - Client: 127.0.0.1
+2025-06-17 12:39:44,396 - stock_analytics - INFO - Financial scores requested for ticker: NVDA
+2025-06-17 12:39:44,396 - fmp_api - INFO - FMP API REQUEST: financial-scores
+2025-06-17 12:39:44,462 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/historical-price-eod/light?symbol=NVDA&from=2025-05-18&to=2025-06-17&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 12:39:44,463 - fmp_api - INFO - FMP API RESPONSE: historical-price-eod/light - Status: 200 - Time: 0.451s
+2025-06-17 12:39:44,463 - stock_analytics - INFO - Successfully returned 21 price points for NVDA
+2025-06-17 12:39:44,463 - requests - INFO - RESPONSE: GET http://localhost:8000/api/stock-prices/NVDA - Status: 200 - Time: 0.453s
+2025-06-17 12:39:44,464 - requests - INFO - REQUEST: GET http://localhost:8000/api/stock-prices/NVDA - Client: 127.0.0.1
+2025-06-17 12:39:44,464 - stock_analytics - INFO - Stock prices requested for ticker: NVDA, days: 30
+2025-06-17 12:39:44,464 - fmp_api - INFO - FMP API REQUEST: historical-price-eod/light
+2025-06-17 12:39:44,606 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/key-metrics-ttm?symbol=NVDA&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 12:39:44,606 - fmp_api - INFO - FMP API RESPONSE: key-metrics-ttm - Status: 200 - Time: 0.267s
+2025-06-17 12:39:44,606 - stock_analytics - INFO - Successfully returned key metrics for NVDA
+2025-06-17 12:39:44,607 - requests - INFO - RESPONSE: GET http://localhost:8000/api/key-metrics/NVDA - Status: 200 - Time: 0.268s
+2025-06-17 12:39:44,627 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/financial-growth?symbol=NVDA&period=FY&limit=5&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 12:39:44,627 - fmp_api - INFO - FMP API RESPONSE: financial-growth - Status: 200 - Time: 0.279s
+2025-06-17 12:39:44,628 - stock_analytics - INFO - Successfully returned 5 financial growth records for NVDA
+2025-06-17 12:39:44,629 - requests - INFO - RESPONSE: GET http://localhost:8000/api/financial-growth/NVDA?period=FY&limit=5 - Status: 200 - Time: 0.281s
+2025-06-17 12:39:44,672 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/financial-scores?symbol=NVDA&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 12:39:44,672 - fmp_api - INFO - FMP API RESPONSE: financial-scores - Status: 200 - Time: 0.276s
+2025-06-17 12:39:44,672 - stock_analytics - INFO - Successfully returned financial scores for NVDA
+2025-06-17 12:39:44,673 - requests - INFO - RESPONSE: GET http://localhost:8000/api/financial-scores/NVDA - Status: 200 - Time: 0.277s
+2025-06-17 12:39:44,743 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/historical-price-eod/light?symbol=NVDA&from=2025-05-18&to=2025-06-17&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 12:39:44,744 - fmp_api - INFO - FMP API RESPONSE: historical-price-eod/light - Status: 200 - Time: 0.279s
+2025-06-17 12:39:44,744 - stock_analytics - INFO - Successfully returned 21 price points for NVDA
+2025-06-17 12:39:44,744 - requests - INFO - RESPONSE: GET http://localhost:8000/api/stock-prices/NVDA - Status: 200 - Time: 0.280s
+2025-06-17 12:39:44,759 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/analyst-estimates?symbol=NVDA&period=annual&limit=5&page=0&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 12:39:44,759 - fmp_api - INFO - FMP API RESPONSE: analyst-estimates - Status: 200 - Time: 0.404s
+2025-06-17 12:39:44,760 - stock_analytics - INFO - Successfully returned 5 analyst estimates for NVDA
+2025-06-17 12:39:44,760 - requests - INFO - RESPONSE: GET http://localhost:8000/api/analyst-estimates/NVDA?period=annual&limit=5 - Status: 200 - Time: 0.405s
+2025-06-17 12:40:01,085 - requests - INFO - REQUEST: OPTIONS http://localhost:8000/ - Client: 127.0.0.1
+2025-06-17 12:40:01,097 - requests - INFO - REQUEST: OPTIONS http://localhost:8000/ - Client: 127.0.0.1
+2025-06-17 12:40:01,100 - requests - INFO - RESPONSE: OPTIONS http://localhost:8000/ - Status: 200 - Time: 0.016s
+2025-06-17 12:40:01,105 - requests - INFO - RESPONSE: OPTIONS http://localhost:8000/ - Status: 200 - Time: 0.008s
+2025-06-17 12:40:01,106 - requests - INFO - REQUEST: GET http://localhost:8000/ - Client: 127.0.0.1
+2025-06-17 12:40:01,108 - stock_analytics - INFO - Health check requested
+2025-06-17 12:40:01,111 - requests - INFO - RESPONSE: GET http://localhost:8000/ - Status: 200 - Time: 0.004s
+2025-06-17 12:40:01,114 - requests - INFO - REQUEST: GET http://localhost:8000/ - Client: 127.0.0.1
+2025-06-17 12:40:01,114 - stock_analytics - INFO - Health check requested
+2025-06-17 12:40:01,115 - requests - INFO - RESPONSE: GET http://localhost:8000/ - Status: 200 - Time: 0.001s
+2025-06-17 12:40:01,116 - requests - INFO - REQUEST: OPTIONS http://localhost:8000/api/popular-stocks - Client: 127.0.0.1
+2025-06-17 12:40:01,117 - requests - INFO - REQUEST: OPTIONS http://localhost:8000/api/popular-stocks - Client: 127.0.0.1
+2025-06-17 12:40:01,117 - requests - INFO - RESPONSE: OPTIONS http://localhost:8000/api/popular-stocks - Status: 200 - Time: 0.001s
+2025-06-17 12:40:01,118 - requests - INFO - RESPONSE: OPTIONS http://localhost:8000/api/popular-stocks - Status: 200 - Time: 0.001s
+2025-06-17 12:40:01,119 - requests - INFO - REQUEST: GET http://localhost:8000/api/popular-stocks - Client: 127.0.0.1
+2025-06-17 12:40:01,120 - stock_analytics - INFO - Popular stocks requested
+2025-06-17 12:40:01,120 - fmp_api - INFO - FMP API REQUEST: most-actives
+2025-06-17 12:40:01,534 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/most-actives?apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 12:40:01,535 - fmp_api - INFO - FMP API RESPONSE: most-actives - Status: 200 - Time: 0.415s
+2025-06-17 12:40:01,535 - stock_analytics - INFO - Successfully returned 6 popular stocks
+2025-06-17 12:40:01,535 - requests - INFO - RESPONSE: GET http://localhost:8000/api/popular-stocks - Status: 200 - Time: 0.416s
+2025-06-17 12:40:01,536 - requests - INFO - REQUEST: GET http://localhost:8000/api/popular-stocks - Client: 127.0.0.1
+2025-06-17 12:40:01,536 - stock_analytics - INFO - Popular stocks requested
+2025-06-17 12:40:01,536 - fmp_api - INFO - FMP API REQUEST: most-actives
+2025-06-17 12:40:01,932 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/most-actives?apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 12:40:01,934 - fmp_api - INFO - FMP API RESPONSE: most-actives - Status: 200 - Time: 0.398s
+2025-06-17 12:40:01,936 - stock_analytics - INFO - Successfully returned 6 popular stocks
+2025-06-17 12:40:01,937 - requests - INFO - RESPONSE: GET http://localhost:8000/api/popular-stocks - Status: 200 - Time: 0.401s
+2025-06-17 12:40:05,824 - requests - INFO - REQUEST: GET http://localhost:8000/api/company/DNN - Client: 127.0.0.1
+2025-06-17 12:40:05,827 - stock_analytics - INFO - Company profile requested for ticker: DNN
+2025-06-17 12:40:05,827 - fmp_api - INFO - FMP API REQUEST: profile
+2025-06-17 12:40:06,357 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/profile?symbol=DNN&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 12:40:06,358 - fmp_api - INFO - FMP API RESPONSE: profile - Status: 200 - Time: 0.530s
+2025-06-17 12:40:06,358 - stock_analytics - INFO - Successfully returned company profile for DNN: Denison Mines Corp.
+2025-06-17 12:40:06,358 - requests - INFO - RESPONSE: GET http://localhost:8000/api/company/DNN - Status: 200 - Time: 0.534s
+2025-06-17 12:40:06,361 - requests - INFO - REQUEST: GET http://localhost:8000/api/company/DNN - Client: 127.0.0.1
+2025-06-17 12:40:06,361 - stock_analytics - INFO - Company profile requested for ticker: DNN
+2025-06-17 12:40:06,361 - fmp_api - INFO - FMP API REQUEST: profile
+2025-06-17 12:40:06,375 - requests - INFO - REQUEST: GET http://localhost:8000/api/stock-prices/DNN - Client: 127.0.0.1
+2025-06-17 12:40:06,376 - stock_analytics - INFO - Stock prices requested for ticker: DNN, days: 30
+2025-06-17 12:40:06,376 - fmp_api - INFO - FMP API REQUEST: historical-price-eod/light
+2025-06-17 12:40:06,384 - requests - INFO - REQUEST: GET http://localhost:8000/api/key-metrics/DNN - Client: 127.0.0.1
+2025-06-17 12:40:06,385 - stock_analytics - INFO - Key metrics requested for ticker: DNN
+2025-06-17 12:40:06,385 - fmp_api - INFO - FMP API REQUEST: key-metrics-ttm
+2025-06-17 12:40:06,390 - requests - INFO - REQUEST: GET http://localhost:8000/api/financial-scores/DNN - Client: 127.0.0.1
+2025-06-17 12:40:06,391 - stock_analytics - INFO - Financial scores requested for ticker: DNN
+2025-06-17 12:40:06,392 - fmp_api - INFO - FMP API REQUEST: financial-scores
+2025-06-17 12:40:06,400 - requests - INFO - REQUEST: GET http://localhost:8000/api/analyst-estimates/DNN?period=annual&limit=5 - Client: 127.0.0.1
+2025-06-17 12:40:06,401 - stock_analytics - INFO - Analyst estimates requested for ticker: DNN, period: annual
+2025-06-17 12:40:06,401 - fmp_api - INFO - FMP API REQUEST: analyst-estimates
+2025-06-17 12:40:06,410 - requests - INFO - REQUEST: GET http://localhost:8000/api/financial-growth/DNN?period=FY&limit=5 - Client: 127.0.0.1
+2025-06-17 12:40:06,410 - stock_analytics - INFO - Financial growth requested for ticker: DNN, period: FY
+2025-06-17 12:40:06,410 - fmp_api - INFO - FMP API REQUEST: financial-growth
+2025-06-17 12:40:06,673 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/historical-price-eod/light?symbol=DNN&from=2025-05-18&to=2025-06-17&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 402 Payment Required"
+2025-06-17 12:40:06,673 - fmp_api - INFO - FMP API RESPONSE: historical-price-eod/light - Status: 402 - Time: 0.298s
+2025-06-17 12:40:06,674 - fmp_api - ERROR - FMP API HTTP ERROR: historical-price-eod/light - Status: 402
+2025-06-17 12:40:06,677 - requests - INFO - RESPONSE: GET http://localhost:8000/api/stock-prices/DNN - Status: 500 - Time: 0.302s
+2025-06-17 12:40:06,678 - requests - INFO - REQUEST: GET http://localhost:8000/api/stock-prices/DNN - Client: 127.0.0.1
+2025-06-17 12:40:06,678 - stock_analytics - INFO - Stock prices requested for ticker: DNN, days: 30
+2025-06-17 12:40:06,679 - fmp_api - INFO - FMP API REQUEST: historical-price-eod/light
+2025-06-17 12:40:06,687 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/financial-scores?symbol=DNN&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 402 Payment Required"
+2025-06-17 12:40:06,688 - fmp_api - INFO - FMP API RESPONSE: financial-scores - Status: 402 - Time: 0.296s
+2025-06-17 12:40:06,688 - fmp_api - ERROR - FMP API HTTP ERROR: financial-scores - Status: 402
+2025-06-17 12:40:06,689 - requests - INFO - RESPONSE: GET http://localhost:8000/api/financial-scores/DNN - Status: 500 - Time: 0.298s
+2025-06-17 12:40:06,692 - requests - INFO - REQUEST: GET http://localhost:8000/api/financial-scores/DNN - Client: 127.0.0.1
+2025-06-17 12:40:06,692 - stock_analytics - INFO - Financial scores requested for ticker: DNN
+2025-06-17 12:40:06,692 - fmp_api - INFO - FMP API REQUEST: financial-scores
+2025-06-17 12:40:06,753 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/financial-growth?symbol=DNN&period=FY&limit=5&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 402 Payment Required"
+2025-06-17 12:40:06,753 - fmp_api - INFO - FMP API RESPONSE: financial-growth - Status: 402 - Time: 0.343s
+2025-06-17 12:40:06,753 - fmp_api - ERROR - FMP API HTTP ERROR: financial-growth - Status: 402
+2025-06-17 12:40:06,754 - requests - INFO - RESPONSE: GET http://localhost:8000/api/financial-growth/DNN?period=FY&limit=5 - Status: 500 - Time: 0.345s
+2025-06-17 12:40:06,774 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/profile?symbol=DNN&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 12:40:06,781 - fmp_api - INFO - FMP API RESPONSE: profile - Status: 200 - Time: 0.420s
+2025-06-17 12:40:06,782 - requests - INFO - REQUEST: GET http://localhost:8000/api/financial-growth/DNN?period=FY&limit=5 - Client: 127.0.0.1
+2025-06-17 12:40:06,783 - stock_analytics - INFO - Successfully returned company profile for DNN: Denison Mines Corp.
+2025-06-17 12:40:06,784 - stock_analytics - INFO - Financial growth requested for ticker: DNN, period: FY
+2025-06-17 12:40:06,784 - fmp_api - INFO - FMP API REQUEST: financial-growth
+2025-06-17 12:40:06,830 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/key-metrics-ttm?symbol=DNN&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 402 Payment Required"
+2025-06-17 12:40:06,831 - requests - INFO - RESPONSE: GET http://localhost:8000/api/company/DNN - Status: 200 - Time: 0.470s
+2025-06-17 12:40:06,834 - fmp_api - INFO - FMP API RESPONSE: key-metrics-ttm - Status: 402 - Time: 0.450s
+2025-06-17 12:40:06,835 - fmp_api - ERROR - FMP API HTTP ERROR: key-metrics-ttm - Status: 402
+2025-06-17 12:40:06,872 - requests - INFO - RESPONSE: GET http://localhost:8000/api/key-metrics/DNN - Status: 500 - Time: 0.488s
+2025-06-17 12:40:06,895 - requests - INFO - REQUEST: GET http://localhost:8000/api/key-metrics/DNN - Client: 127.0.0.1
+2025-06-17 12:40:06,896 - stock_analytics - INFO - Key metrics requested for ticker: DNN
+2025-06-17 12:40:06,896 - fmp_api - INFO - FMP API REQUEST: key-metrics-ttm
+2025-06-17 12:40:07,133 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/historical-price-eod/light?symbol=DNN&from=2025-05-18&to=2025-06-17&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 402 Payment Required"
+2025-06-17 12:40:07,162 - fmp_api - INFO - FMP API RESPONSE: historical-price-eod/light - Status: 402 - Time: 0.484s
+2025-06-17 12:40:07,163 - fmp_api - ERROR - FMP API HTTP ERROR: historical-price-eod/light - Status: 402
+2025-06-17 12:40:07,173 - requests - INFO - RESPONSE: GET http://localhost:8000/api/stock-prices/DNN - Status: 500 - Time: 0.495s
+2025-06-17 12:40:07,214 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/analyst-estimates?symbol=DNN&period=annual&limit=5&page=0&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 402 Payment Required"
+2025-06-17 12:40:07,226 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/financial-scores?symbol=DNN&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 402 Payment Required"
+2025-06-17 12:40:07,228 - fmp_api - INFO - FMP API RESPONSE: analyst-estimates - Status: 402 - Time: 0.826s
+2025-06-17 12:40:07,228 - fmp_api - ERROR - FMP API HTTP ERROR: analyst-estimates - Status: 402
+2025-06-17 12:40:07,229 - fmp_api - INFO - FMP API RESPONSE: financial-scores - Status: 402 - Time: 0.537s
+2025-06-17 12:40:07,229 - fmp_api - ERROR - FMP API HTTP ERROR: financial-scores - Status: 402
+2025-06-17 12:40:07,240 - requests - INFO - RESPONSE: GET http://localhost:8000/api/analyst-estimates/DNN?period=annual&limit=5 - Status: 500 - Time: 0.840s
+2025-06-17 12:40:07,240 - requests - INFO - RESPONSE: GET http://localhost:8000/api/financial-scores/DNN - Status: 500 - Time: 0.549s
+2025-06-17 12:40:07,242 - requests - INFO - REQUEST: GET http://localhost:8000/api/analyst-estimates/DNN?period=annual&limit=5 - Client: 127.0.0.1
+2025-06-17 12:40:07,263 - stock_analytics - INFO - Analyst estimates requested for ticker: DNN, period: annual
+2025-06-17 12:40:07,263 - fmp_api - INFO - FMP API REQUEST: analyst-estimates
+2025-06-17 12:40:07,417 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/financial-growth?symbol=DNN&period=FY&limit=5&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 402 Payment Required"
+2025-06-17 12:40:07,422 - fmp_api - INFO - FMP API RESPONSE: financial-growth - Status: 402 - Time: 0.638s
+2025-06-17 12:40:07,422 - fmp_api - ERROR - FMP API HTTP ERROR: financial-growth - Status: 402
+2025-06-17 12:40:07,427 - requests - INFO - RESPONSE: GET http://localhost:8000/api/financial-growth/DNN?period=FY&limit=5 - Status: 500 - Time: 0.645s
+2025-06-17 12:40:07,534 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/key-metrics-ttm?symbol=DNN&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 402 Payment Required"
+2025-06-17 12:40:07,534 - fmp_api - INFO - FMP API RESPONSE: key-metrics-ttm - Status: 402 - Time: 0.638s
+2025-06-17 12:40:07,535 - fmp_api - ERROR - FMP API HTTP ERROR: key-metrics-ttm - Status: 402
+2025-06-17 12:40:07,535 - requests - INFO - RESPONSE: GET http://localhost:8000/api/key-metrics/DNN - Status: 500 - Time: 0.640s
+2025-06-17 12:40:07,652 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/analyst-estimates?symbol=DNN&period=annual&limit=5&page=0&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 402 Payment Required"
+2025-06-17 12:40:07,652 - fmp_api - INFO - FMP API RESPONSE: analyst-estimates - Status: 402 - Time: 0.388s
+2025-06-17 12:40:07,652 - fmp_api - ERROR - FMP API HTTP ERROR: analyst-estimates - Status: 402
+2025-06-17 12:40:07,652 - requests - INFO - RESPONSE: GET http://localhost:8000/api/analyst-estimates/DNN?period=annual&limit=5 - Status: 500 - Time: 0.410s
+2025-06-17 12:40:09,511 - requests - INFO - REQUEST: GET http://localhost:8000/ - Client: 127.0.0.1
+2025-06-17 12:40:09,512 - stock_analytics - INFO - Health check requested
+2025-06-17 12:40:09,513 - requests - INFO - RESPONSE: GET http://localhost:8000/ - Status: 200 - Time: 0.002s
+2025-06-17 12:40:09,516 - requests - INFO - REQUEST: GET http://localhost:8000/ - Client: 127.0.0.1
+2025-06-17 12:40:09,521 - stock_analytics - INFO - Health check requested
+2025-06-17 12:40:09,542 - requests - INFO - REQUEST: GET http://localhost:8000/api/popular-stocks - Client: 127.0.0.1
+2025-06-17 12:40:09,544 - stock_analytics - INFO - Popular stocks requested
+2025-06-17 12:40:09,546 - fmp_api - INFO - FMP API REQUEST: most-actives
+2025-06-17 12:40:09,683 - requests - INFO - RESPONSE: GET http://localhost:8000/ - Status: 200 - Time: 0.167s
+2025-06-17 12:40:09,985 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/most-actives?apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 12:40:09,986 - fmp_api - INFO - FMP API RESPONSE: most-actives - Status: 200 - Time: 0.439s
+2025-06-17 12:40:09,987 - stock_analytics - INFO - Successfully returned 6 popular stocks
+2025-06-17 12:40:09,988 - requests - INFO - RESPONSE: GET http://localhost:8000/api/popular-stocks - Status: 200 - Time: 0.446s
+2025-06-17 12:40:09,988 - requests - INFO - REQUEST: GET http://localhost:8000/api/popular-stocks - Client: 127.0.0.1
+2025-06-17 12:40:09,989 - stock_analytics - INFO - Popular stocks requested
+2025-06-17 12:40:09,989 - fmp_api - INFO - FMP API REQUEST: most-actives
+2025-06-17 12:40:10,263 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/most-actives?apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 12:40:10,263 - fmp_api - INFO - FMP API RESPONSE: most-actives - Status: 200 - Time: 0.274s
+2025-06-17 12:40:10,263 - stock_analytics - INFO - Successfully returned 6 popular stocks
+2025-06-17 12:40:10,263 - requests - INFO - RESPONSE: GET http://localhost:8000/api/popular-stocks - Status: 200 - Time: 0.275s
+2025-06-17 12:40:18,174 - requests - INFO - REQUEST: GET http://localhost:8000/api/company/NVIDIA - Client: 127.0.0.1
+2025-06-17 12:40:18,186 - stock_analytics - INFO - Company profile requested for ticker: NVIDIA
+2025-06-17 12:40:18,187 - fmp_api - INFO - FMP API REQUEST: profile
+2025-06-17 12:40:18,556 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/profile?symbol=NVIDIA&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 12:40:18,556 - fmp_api - INFO - FMP API RESPONSE: profile - Status: 200 - Time: 0.369s
+2025-06-17 12:40:18,556 - stock_analytics - WARNING - No company profile data found for ticker: NVIDIA
+2025-06-17 12:40:18,556 - requests - INFO - RESPONSE: GET http://localhost:8000/api/company/NVIDIA - Status: 404 - Time: 0.383s
+2025-06-17 12:40:18,557 - requests - INFO - REQUEST: GET http://localhost:8000/api/company/NVIDIA - Client: 127.0.0.1
+2025-06-17 12:40:18,558 - stock_analytics - INFO - Company profile requested for ticker: NVIDIA
+2025-06-17 12:40:18,558 - fmp_api - INFO - FMP API REQUEST: profile
+2025-06-17 12:40:18,584 - requests - INFO - REQUEST: GET http://localhost:8000/api/stock-prices/NVIDIA - Client: 127.0.0.1
+2025-06-17 12:40:18,585 - stock_analytics - INFO - Stock prices requested for ticker: NVIDIA, days: 30
+2025-06-17 12:40:18,585 - fmp_api - INFO - FMP API REQUEST: historical-price-eod/light
+2025-06-17 12:40:18,596 - requests - INFO - REQUEST: GET http://localhost:8000/api/key-metrics/NVIDIA - Client: 127.0.0.1
+2025-06-17 12:40:18,596 - stock_analytics - INFO - Key metrics requested for ticker: NVIDIA
+2025-06-17 12:40:18,596 - fmp_api - INFO - FMP API REQUEST: key-metrics-ttm
+2025-06-17 12:40:18,609 - requests - INFO - REQUEST: GET http://localhost:8000/api/financial-scores/NVIDIA - Client: 127.0.0.1
+2025-06-17 12:40:18,610 - stock_analytics - INFO - Financial scores requested for ticker: NVIDIA
+2025-06-17 12:40:18,610 - fmp_api - INFO - FMP API REQUEST: financial-scores
+2025-06-17 12:40:18,616 - requests - INFO - REQUEST: GET http://localhost:8000/api/analyst-estimates/NVIDIA?period=annual&limit=5 - Client: 127.0.0.1
+2025-06-17 12:40:18,616 - stock_analytics - INFO - Analyst estimates requested for ticker: NVIDIA, period: annual
+2025-06-17 12:40:18,616 - fmp_api - INFO - FMP API REQUEST: analyst-estimates
+2025-06-17 12:40:18,622 - requests - INFO - REQUEST: GET http://localhost:8000/api/financial-growth/NVIDIA?period=FY&limit=5 - Client: 127.0.0.1
+2025-06-17 12:40:18,622 - stock_analytics - INFO - Financial growth requested for ticker: NVIDIA, period: FY
+2025-06-17 12:40:18,622 - fmp_api - INFO - FMP API REQUEST: financial-growth
+2025-06-17 12:40:18,817 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/profile?symbol=NVIDIA&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 12:40:18,821 - fmp_api - INFO - FMP API RESPONSE: profile - Status: 200 - Time: 0.263s
+2025-06-17 12:40:18,827 - stock_analytics - WARNING - No company profile data found for ticker: NVIDIA
+2025-06-17 12:40:18,832 - requests - INFO - RESPONSE: GET http://localhost:8000/api/company/NVIDIA - Status: 404 - Time: 0.275s
+2025-06-17 12:40:18,889 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/financial-scores?symbol=NVIDIA&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 402 Payment Required"
+2025-06-17 12:40:18,890 - fmp_api - INFO - FMP API RESPONSE: financial-scores - Status: 402 - Time: 0.280s
+2025-06-17 12:40:18,890 - fmp_api - ERROR - FMP API HTTP ERROR: financial-scores - Status: 402
+2025-06-17 12:40:18,891 - requests - INFO - RESPONSE: GET http://localhost:8000/api/financial-scores/NVIDIA - Status: 500 - Time: 0.283s
+2025-06-17 12:40:18,901 - requests - INFO - REQUEST: GET http://localhost:8000/api/financial-scores/NVIDIA - Client: 127.0.0.1
+2025-06-17 12:40:18,916 - stock_analytics - INFO - Financial scores requested for ticker: NVIDIA
+2025-06-17 12:40:18,916 - fmp_api - INFO - FMP API REQUEST: financial-scores
+2025-06-17 12:40:19,013 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/historical-price-eod/light?symbol=NVIDIA&from=2025-05-18&to=2025-06-17&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 402 Payment Required"
+2025-06-17 12:40:19,016 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/key-metrics-ttm?symbol=NVIDIA&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 402 Payment Required"
+2025-06-17 12:40:19,017 - fmp_api - INFO - FMP API RESPONSE: historical-price-eod/light - Status: 402 - Time: 0.431s
+2025-06-17 12:40:19,019 - fmp_api - ERROR - FMP API HTTP ERROR: historical-price-eod/light - Status: 402
+2025-06-17 12:40:19,022 - fmp_api - INFO - FMP API RESPONSE: key-metrics-ttm - Status: 402 - Time: 0.426s
+2025-06-17 12:40:19,022 - fmp_api - ERROR - FMP API HTTP ERROR: key-metrics-ttm - Status: 402
+2025-06-17 12:40:19,024 - requests - INFO - RESPONSE: GET http://localhost:8000/api/stock-prices/NVIDIA - Status: 500 - Time: 0.440s
+2025-06-17 12:40:19,024 - requests - INFO - RESPONSE: GET http://localhost:8000/api/key-metrics/NVIDIA - Status: 500 - Time: 0.429s
+2025-06-17 12:40:19,034 - requests - INFO - REQUEST: GET http://localhost:8000/api/stock-prices/NVIDIA - Client: 127.0.0.1
+2025-06-17 12:40:19,049 - stock_analytics - INFO - Stock prices requested for ticker: NVIDIA, days: 30
+2025-06-17 12:40:19,049 - fmp_api - INFO - FMP API REQUEST: historical-price-eod/light
+2025-06-17 12:40:19,154 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/financial-growth?symbol=NVIDIA&period=FY&limit=5&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 402 Payment Required"
+2025-06-17 12:40:19,156 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/analyst-estimates?symbol=NVIDIA&period=annual&limit=5&page=0&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 402 Payment Required"
+2025-06-17 12:40:19,164 - fmp_api - INFO - FMP API RESPONSE: financial-growth - Status: 402 - Time: 0.542s
+2025-06-17 12:40:19,164 - fmp_api - ERROR - FMP API HTTP ERROR: financial-growth - Status: 402
+2025-06-17 12:40:19,169 - fmp_api - INFO - FMP API RESPONSE: analyst-estimates - Status: 402 - Time: 0.553s
+2025-06-17 12:40:19,188 - fmp_api - ERROR - FMP API HTTP ERROR: analyst-estimates - Status: 402
+2025-06-17 12:40:19,196 - requests - INFO - REQUEST: GET http://localhost:8000/api/key-metrics/NVIDIA - Client: 127.0.0.1
+2025-06-17 12:40:19,201 - stock_analytics - INFO - Key metrics requested for ticker: NVIDIA
+2025-06-17 12:40:19,201 - fmp_api - INFO - FMP API REQUEST: key-metrics-ttm
+2025-06-17 12:40:19,303 - requests - INFO - RESPONSE: GET http://localhost:8000/api/financial-growth/NVIDIA?period=FY&limit=5 - Status: 500 - Time: 0.681s
+2025-06-17 12:40:19,305 - requests - INFO - RESPONSE: GET http://localhost:8000/api/analyst-estimates/NVIDIA?period=annual&limit=5 - Status: 500 - Time: 0.689s
+2025-06-17 12:40:19,324 - requests - INFO - REQUEST: GET http://localhost:8000/api/financial-growth/NVIDIA?period=FY&limit=5 - Client: 127.0.0.1
+2025-06-17 12:40:19,333 - stock_analytics - INFO - Financial growth requested for ticker: NVIDIA, period: FY
+2025-06-17 12:40:19,339 - fmp_api - INFO - FMP API REQUEST: financial-growth
+2025-06-17 12:40:19,389 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/financial-scores?symbol=NVIDIA&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 402 Payment Required"
+2025-06-17 12:40:19,397 - requests - INFO - REQUEST: GET http://localhost:8000/api/analyst-estimates/NVIDIA?period=annual&limit=5 - Client: 127.0.0.1
+2025-06-17 12:40:19,398 - fmp_api - INFO - FMP API RESPONSE: financial-scores - Status: 402 - Time: 0.482s
+2025-06-17 12:40:19,398 - fmp_api - ERROR - FMP API HTTP ERROR: financial-scores - Status: 402
+2025-06-17 12:40:19,403 - stock_analytics - INFO - Analyst estimates requested for ticker: NVIDIA, period: annual
+2025-06-17 12:40:19,409 - fmp_api - INFO - FMP API REQUEST: analyst-estimates
+2025-06-17 12:40:19,439 - requests - INFO - RESPONSE: GET http://localhost:8000/api/financial-scores/NVIDIA - Status: 500 - Time: 0.538s
+2025-06-17 12:40:19,515 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/historical-price-eod/light?symbol=NVIDIA&from=2025-05-18&to=2025-06-17&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 402 Payment Required"
+2025-06-17 12:40:19,515 - fmp_api - INFO - FMP API RESPONSE: historical-price-eod/light - Status: 402 - Time: 0.466s
+2025-06-17 12:40:19,515 - fmp_api - ERROR - FMP API HTTP ERROR: historical-price-eod/light - Status: 402
+2025-06-17 12:40:19,516 - requests - INFO - RESPONSE: GET http://localhost:8000/api/stock-prices/NVIDIA - Status: 500 - Time: 0.482s
+2025-06-17 12:40:19,710 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/key-metrics-ttm?symbol=NVIDIA&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 402 Payment Required"
+2025-06-17 12:40:19,711 - fmp_api - INFO - FMP API RESPONSE: key-metrics-ttm - Status: 402 - Time: 0.478s
+2025-06-17 12:40:19,711 - fmp_api - ERROR - FMP API HTTP ERROR: key-metrics-ttm - Status: 402
+2025-06-17 12:40:19,711 - requests - INFO - RESPONSE: GET http://localhost:8000/api/key-metrics/NVIDIA - Status: 500 - Time: 0.519s
+2025-06-17 12:40:19,751 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/financial-growth?symbol=NVIDIA&period=FY&limit=5&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 402 Payment Required"
+2025-06-17 12:40:19,751 - fmp_api - INFO - FMP API RESPONSE: financial-growth - Status: 402 - Time: 0.412s
+2025-06-17 12:40:19,751 - fmp_api - ERROR - FMP API HTTP ERROR: financial-growth - Status: 402
+2025-06-17 12:40:19,752 - requests - INFO - RESPONSE: GET http://localhost:8000/api/financial-growth/NVIDIA?period=FY&limit=5 - Status: 500 - Time: 0.433s
+2025-06-17 12:40:20,003 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/analyst-estimates?symbol=NVIDIA&period=annual&limit=5&page=0&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 402 Payment Required"
+2025-06-17 12:40:20,003 - fmp_api - INFO - FMP API RESPONSE: analyst-estimates - Status: 402 - Time: 0.586s
+2025-06-17 12:40:20,003 - fmp_api - ERROR - FMP API HTTP ERROR: analyst-estimates - Status: 402
+2025-06-17 12:40:20,003 - requests - INFO - RESPONSE: GET http://localhost:8000/api/analyst-estimates/NVIDIA?period=annual&limit=5 - Status: 500 - Time: 0.606s
+2025-06-17 12:40:56,951 - requests - INFO - REQUEST: GET http://localhost:8000/ - Client: 127.0.0.1
+2025-06-17 12:40:56,979 - stock_analytics - INFO - Health check requested
+2025-06-17 12:40:57,076 - requests - INFO - RESPONSE: GET http://localhost:8000/ - Status: 200 - Time: 0.265s
+2025-06-17 12:40:57,088 - requests - INFO - REQUEST: GET http://localhost:8000/ - Client: 127.0.0.1
+2025-06-17 12:40:57,090 - stock_analytics - INFO - Health check requested
+2025-06-17 12:40:57,093 - requests - INFO - REQUEST: GET http://localhost:8000/api/popular-stocks - Client: 127.0.0.1
+2025-06-17 12:40:57,097 - stock_analytics - INFO - Popular stocks requested
+2025-06-17 12:40:57,100 - fmp_api - INFO - FMP API REQUEST: most-actives
+2025-06-17 12:40:57,193 - requests - INFO - RESPONSE: GET http://localhost:8000/ - Status: 200 - Time: 0.105s
+2025-06-17 12:40:57,613 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/most-actives?apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 12:40:57,613 - fmp_api - INFO - FMP API RESPONSE: most-actives - Status: 200 - Time: 0.513s
+2025-06-17 12:40:57,613 - stock_analytics - INFO - Successfully returned 6 popular stocks
+2025-06-17 12:40:57,613 - requests - INFO - RESPONSE: GET http://localhost:8000/api/popular-stocks - Status: 200 - Time: 0.521s
+2025-06-17 12:40:57,614 - requests - INFO - REQUEST: GET http://localhost:8000/api/popular-stocks - Client: 127.0.0.1
+2025-06-17 12:40:57,614 - stock_analytics - INFO - Popular stocks requested
+2025-06-17 12:40:57,614 - fmp_api - INFO - FMP API REQUEST: most-actives
+2025-06-17 12:40:58,216 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/most-actives?apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 12:40:58,233 - fmp_api - INFO - FMP API RESPONSE: most-actives - Status: 200 - Time: 0.619s
+2025-06-17 12:40:58,244 - stock_analytics - INFO - Successfully returned 6 popular stocks
+2025-06-17 12:40:58,247 - requests - INFO - RESPONSE: GET http://localhost:8000/api/popular-stocks - Status: 200 - Time: 0.633s
+2025-06-17 12:41:02,221 - requests - INFO - REQUEST: GET http://localhost:8000/api/company/TSLA - Client: 127.0.0.1
+2025-06-17 12:41:02,286 - stock_analytics - INFO - Company profile requested for ticker: TSLA
+2025-06-17 12:41:02,286 - fmp_api - INFO - FMP API REQUEST: profile
+2025-06-17 12:41:02,735 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/profile?symbol=TSLA&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 12:41:02,735 - fmp_api - INFO - FMP API RESPONSE: profile - Status: 200 - Time: 0.449s
+2025-06-17 12:41:02,736 - stock_analytics - INFO - Successfully returned company profile for TSLA: Tesla, Inc.
+2025-06-17 12:41:02,736 - requests - INFO - RESPONSE: GET http://localhost:8000/api/company/TSLA - Status: 200 - Time: 0.516s
+2025-06-17 12:41:02,737 - requests - INFO - REQUEST: GET http://localhost:8000/api/company/TSLA - Client: 127.0.0.1
+2025-06-17 12:41:02,737 - stock_analytics - INFO - Company profile requested for ticker: TSLA
+2025-06-17 12:41:02,737 - fmp_api - INFO - FMP API REQUEST: profile
+2025-06-17 12:41:02,929 - requests - INFO - REQUEST: GET http://localhost:8000/api/stock-prices/TSLA - Client: 127.0.0.1
+2025-06-17 12:41:02,967 - stock_analytics - INFO - Stock prices requested for ticker: TSLA, days: 30
+2025-06-17 12:41:02,968 - fmp_api - INFO - FMP API REQUEST: historical-price-eod/light
+2025-06-17 12:41:03,075 - requests - INFO - REQUEST: GET http://localhost:8000/api/key-metrics/TSLA - Client: 127.0.0.1
+2025-06-17 12:41:03,092 - stock_analytics - INFO - Key metrics requested for ticker: TSLA
+2025-06-17 12:41:03,092 - fmp_api - INFO - FMP API REQUEST: key-metrics-ttm
+2025-06-17 12:41:03,203 - requests - INFO - REQUEST: GET http://localhost:8000/api/financial-scores/TSLA - Client: 127.0.0.1
+2025-06-17 12:41:03,204 - stock_analytics - INFO - Financial scores requested for ticker: TSLA
+2025-06-17 12:41:03,204 - fmp_api - INFO - FMP API REQUEST: financial-scores
+2025-06-17 12:41:03,325 - requests - INFO - REQUEST: GET http://localhost:8000/api/analyst-estimates/TSLA?period=annual&limit=5 - Client: 127.0.0.1
+2025-06-17 12:41:03,329 - stock_analytics - INFO - Analyst estimates requested for ticker: TSLA, period: annual
+2025-06-17 12:41:03,329 - fmp_api - INFO - FMP API REQUEST: analyst-estimates
+2025-06-17 12:41:03,377 - requests - INFO - REQUEST: GET http://localhost:8000/api/financial-growth/TSLA?period=FY&limit=5 - Client: 127.0.0.1
+2025-06-17 12:41:03,379 - stock_analytics - INFO - Financial growth requested for ticker: TSLA, period: FY
+2025-06-17 12:41:03,379 - fmp_api - INFO - FMP API REQUEST: financial-growth
+2025-06-17 12:41:03,703 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/historical-price-eod/light?symbol=TSLA&from=2025-05-18&to=2025-06-17&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 12:41:03,703 - fmp_api - INFO - FMP API RESPONSE: historical-price-eod/light - Status: 200 - Time: 0.733s
+2025-06-17 12:41:03,703 - stock_analytics - INFO - Successfully returned 21 price points for TSLA
+2025-06-17 12:41:03,704 - requests - INFO - RESPONSE: GET http://localhost:8000/api/stock-prices/TSLA - Status: 200 - Time: 0.775s
+2025-06-17 12:41:03,721 - requests - INFO - REQUEST: GET http://localhost:8000/api/stock-prices/TSLA - Client: 127.0.0.1
+2025-06-17 12:41:03,722 - stock_analytics - INFO - Stock prices requested for ticker: TSLA, days: 30
+2025-06-17 12:41:03,722 - fmp_api - INFO - FMP API REQUEST: historical-price-eod/light
+2025-06-17 12:41:03,828 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/key-metrics-ttm?symbol=TSLA&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 12:41:03,829 - fmp_api - INFO - FMP API RESPONSE: key-metrics-ttm - Status: 200 - Time: 0.737s
+2025-06-17 12:41:03,829 - stock_analytics - INFO - Successfully returned key metrics for TSLA
+2025-06-17 12:41:03,829 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/profile?symbol=TSLA&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 12:41:03,830 - fmp_api - INFO - FMP API RESPONSE: profile - Status: 200 - Time: 1.092s
+2025-06-17 12:41:03,830 - requests - INFO - RESPONSE: GET http://localhost:8000/api/key-metrics/TSLA - Status: 200 - Time: 0.755s
+2025-06-17 12:41:03,830 - stock_analytics - INFO - Successfully returned company profile for TSLA: Tesla, Inc.
+2025-06-17 12:41:03,830 - requests - INFO - RESPONSE: GET http://localhost:8000/api/company/TSLA - Status: 200 - Time: 1.093s
+2025-06-17 12:41:03,831 - requests - INFO - REQUEST: GET http://localhost:8000/api/key-metrics/TSLA - Client: 127.0.0.1
+2025-06-17 12:41:03,831 - stock_analytics - INFO - Key metrics requested for ticker: TSLA
+2025-06-17 12:41:03,832 - fmp_api - INFO - FMP API REQUEST: key-metrics-ttm
+2025-06-17 12:41:03,838 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/financial-scores?symbol=TSLA&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 12:41:03,839 - fmp_api - INFO - FMP API RESPONSE: financial-scores - Status: 200 - Time: 0.635s
+2025-06-17 12:41:03,839 - stock_analytics - INFO - Successfully returned financial scores for TSLA
+2025-06-17 12:41:03,839 - requests - INFO - RESPONSE: GET http://localhost:8000/api/financial-scores/TSLA - Status: 200 - Time: 0.637s
+2025-06-17 12:41:03,840 - requests - INFO - REQUEST: GET http://localhost:8000/api/financial-scores/TSLA - Client: 127.0.0.1
+2025-06-17 12:41:03,840 - stock_analytics - INFO - Financial scores requested for ticker: TSLA
+2025-06-17 12:41:03,840 - fmp_api - INFO - FMP API REQUEST: financial-scores
+2025-06-17 12:41:03,852 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/analyst-estimates?symbol=TSLA&period=annual&limit=5&page=0&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 12:41:03,854 - fmp_api - INFO - FMP API RESPONSE: analyst-estimates - Status: 200 - Time: 0.525s
+2025-06-17 12:41:03,854 - stock_analytics - INFO - Successfully returned 5 analyst estimates for TSLA
+2025-06-17 12:41:03,854 - requests - INFO - RESPONSE: GET http://localhost:8000/api/analyst-estimates/TSLA?period=annual&limit=5 - Status: 200 - Time: 0.529s
+2025-06-17 12:41:03,855 - requests - INFO - REQUEST: GET http://localhost:8000/api/analyst-estimates/TSLA?period=annual&limit=5 - Client: 127.0.0.1
+2025-06-17 12:41:03,855 - stock_analytics - INFO - Analyst estimates requested for ticker: TSLA, period: annual
+2025-06-17 12:41:03,855 - fmp_api - INFO - FMP API REQUEST: analyst-estimates
+2025-06-17 12:41:03,911 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/financial-growth?symbol=TSLA&period=FY&limit=5&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 12:41:03,912 - fmp_api - INFO - FMP API RESPONSE: financial-growth - Status: 200 - Time: 0.532s
+2025-06-17 12:41:03,912 - stock_analytics - INFO - Successfully returned 5 financial growth records for TSLA
+2025-06-17 12:41:03,913 - requests - INFO - RESPONSE: GET http://localhost:8000/api/financial-growth/TSLA?period=FY&limit=5 - Status: 200 - Time: 0.536s
+2025-06-17 12:41:03,913 - requests - INFO - REQUEST: GET http://localhost:8000/api/financial-growth/TSLA?period=FY&limit=5 - Client: 127.0.0.1
+2025-06-17 12:41:03,913 - stock_analytics - INFO - Financial growth requested for ticker: TSLA, period: FY
+2025-06-17 12:41:03,913 - fmp_api - INFO - FMP API REQUEST: financial-growth
+2025-06-17 12:41:03,997 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/historical-price-eod/light?symbol=TSLA&from=2025-05-18&to=2025-06-17&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 12:41:03,998 - fmp_api - INFO - FMP API RESPONSE: historical-price-eod/light - Status: 200 - Time: 0.276s
+2025-06-17 12:41:03,998 - stock_analytics - INFO - Successfully returned 21 price points for TSLA
+2025-06-17 12:41:03,999 - requests - INFO - RESPONSE: GET http://localhost:8000/api/stock-prices/TSLA - Status: 200 - Time: 0.278s
+2025-06-17 12:41:04,235 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/financial-scores?symbol=TSLA&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 12:41:04,235 - fmp_api - INFO - FMP API RESPONSE: financial-scores - Status: 200 - Time: 0.395s
+2025-06-17 12:41:04,236 - stock_analytics - INFO - Successfully returned financial scores for TSLA
+2025-06-17 12:41:04,236 - requests - INFO - RESPONSE: GET http://localhost:8000/api/financial-scores/TSLA - Status: 200 - Time: 0.396s
+2025-06-17 12:41:04,247 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/financial-growth?symbol=TSLA&period=FY&limit=5&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 12:41:04,247 - fmp_api - INFO - FMP API RESPONSE: financial-growth - Status: 200 - Time: 0.333s
+2025-06-17 12:41:04,247 - stock_analytics - INFO - Successfully returned 5 financial growth records for TSLA
+2025-06-17 12:41:04,248 - requests - INFO - RESPONSE: GET http://localhost:8000/api/financial-growth/TSLA?period=FY&limit=5 - Status: 200 - Time: 0.336s
+2025-06-17 12:41:04,251 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/key-metrics-ttm?symbol=TSLA&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 12:41:04,252 - fmp_api - INFO - FMP API RESPONSE: key-metrics-ttm - Status: 200 - Time: 0.420s
+2025-06-17 12:41:04,252 - stock_analytics - INFO - Successfully returned key metrics for TSLA
+2025-06-17 12:41:04,252 - requests - INFO - RESPONSE: GET http://localhost:8000/api/key-metrics/TSLA - Status: 200 - Time: 0.421s
+2025-06-17 12:41:04,512 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/analyst-estimates?symbol=TSLA&period=annual&limit=5&page=0&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 12:41:04,512 - fmp_api - INFO - FMP API RESPONSE: analyst-estimates - Status: 200 - Time: 0.657s
+2025-06-17 12:41:04,513 - stock_analytics - INFO - Successfully returned 5 analyst estimates for TSLA
+2025-06-17 12:41:04,513 - requests - INFO - RESPONSE: GET http://localhost:8000/api/analyst-estimates/TSLA?period=annual&limit=5 - Status: 200 - Time: 0.658s
+2025-06-17 12:41:19,202 - requests - INFO - REQUEST: GET http://localhost:8000/ - Client: 127.0.0.1
+2025-06-17 12:41:19,225 - stock_analytics - INFO - Health check requested
+2025-06-17 12:41:19,226 - requests - INFO - RESPONSE: GET http://localhost:8000/ - Status: 200 - Time: 0.024s
+2025-06-17 12:41:19,401 - requests - INFO - REQUEST: GET http://localhost:8000/ - Client: 127.0.0.1
+2025-06-17 12:41:19,403 - stock_analytics - INFO - Health check requested
+2025-06-17 12:41:19,408 - requests - INFO - REQUEST: GET http://localhost:8000/api/popular-stocks - Client: 127.0.0.1
+2025-06-17 12:41:19,410 - stock_analytics - INFO - Popular stocks requested
+2025-06-17 12:41:19,412 - fmp_api - INFO - FMP API REQUEST: most-actives
+2025-06-17 12:41:19,437 - requests - INFO - RESPONSE: GET http://localhost:8000/ - Status: 200 - Time: 0.037s
+2025-06-17 12:41:19,854 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/most-actives?apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 429 Too Many Requests"
+2025-06-17 12:41:19,860 - fmp_api - INFO - FMP API RESPONSE: most-actives - Status: 429 - Time: 0.448s
+2025-06-17 12:41:19,866 - fmp_api - ERROR - FMP API HTTP ERROR: most-actives - Status: 429
+2025-06-17 12:41:19,866 - stock_analytics - ERROR - Error in get_popular_stocks: 
+2025-06-17 12:41:19,877 - requests - INFO - RESPONSE: GET http://localhost:8000/api/popular-stocks - Status: 500 - Time: 0.470s
+2025-06-17 12:41:19,880 - requests - INFO - REQUEST: GET http://localhost:8000/api/popular-stocks - Client: 127.0.0.1
+2025-06-17 12:41:19,881 - stock_analytics - INFO - Popular stocks requested
+2025-06-17 12:41:19,881 - fmp_api - INFO - FMP API REQUEST: most-actives
+2025-06-17 12:41:20,251 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/most-actives?apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 429 Too Many Requests"
+2025-06-17 12:41:20,252 - fmp_api - INFO - FMP API RESPONSE: most-actives - Status: 429 - Time: 0.371s
+2025-06-17 12:41:20,252 - fmp_api - ERROR - FMP API HTTP ERROR: most-actives - Status: 429
+2025-06-17 12:41:20,253 - stock_analytics - ERROR - Error in get_popular_stocks: 
+2025-06-17 12:41:20,258 - requests - INFO - RESPONSE: GET http://localhost:8000/api/popular-stocks - Status: 500 - Time: 0.377s
+2025-06-17 12:42:24,422 - requests - INFO - REQUEST: GET http://localhost:8000/ - Client: 127.0.0.1
+2025-06-17 12:42:24,525 - stock_analytics - INFO - Health check requested
+2025-06-17 12:42:24,527 - requests - INFO - RESPONSE: GET http://localhost:8000/ - Status: 200 - Time: 0.105s
+2025-06-17 12:42:24,529 - requests - INFO - REQUEST: GET http://localhost:8000/api/popular-stocks - Client: 127.0.0.1
+2025-06-17 12:42:24,530 - stock_analytics - INFO - Popular stocks requested
+2025-06-17 12:42:24,530 - fmp_api - INFO - FMP API REQUEST: most-actives
+2025-06-17 12:42:24,907 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/most-actives?apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 429 Too Many Requests"
+2025-06-17 12:42:24,908 - fmp_api - INFO - FMP API RESPONSE: most-actives - Status: 429 - Time: 0.378s
+2025-06-17 12:42:24,908 - fmp_api - ERROR - FMP API HTTP ERROR: most-actives - Status: 429
+2025-06-17 12:42:24,908 - stock_analytics - ERROR - Error in get_popular_stocks: 
+2025-06-17 12:42:24,908 - requests - INFO - RESPONSE: GET http://localhost:8000/api/popular-stocks - Status: 500 - Time: 0.379s
+2025-06-17 13:12:11,669 - requests - INFO - REQUEST: OPTIONS http://localhost:8000/ - Client: 127.0.0.1
+2025-06-17 13:12:11,695 - requests - INFO - RESPONSE: OPTIONS http://localhost:8000/ - Status: 200 - Time: 0.033s
+2025-06-17 13:12:11,713 - requests - INFO - REQUEST: GET http://localhost:8000/ - Client: 127.0.0.1
+2025-06-17 13:12:11,716 - stock_analytics - INFO - Health check requested
+2025-06-17 13:12:11,721 - requests - INFO - RESPONSE: GET http://localhost:8000/ - Status: 200 - Time: 0.008s
+2025-06-17 13:12:11,726 - requests - INFO - REQUEST: OPTIONS http://localhost:8000/api/popular-stocks - Client: 127.0.0.1
+2025-06-17 13:12:11,727 - requests - INFO - RESPONSE: OPTIONS http://localhost:8000/api/popular-stocks - Status: 200 - Time: 0.002s
+2025-06-17 13:12:11,731 - requests - INFO - REQUEST: GET http://localhost:8000/api/popular-stocks - Client: 127.0.0.1
+2025-06-17 13:12:11,732 - stock_analytics - INFO - Popular stocks requested
+2025-06-17 13:12:11,734 - fmp_api - INFO - FMP API REQUEST: most-actives
+2025-06-17 13:12:13,037 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/most-actives?apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 429 Too Many Requests"
+2025-06-17 13:12:13,083 - fmp_api - INFO - FMP API RESPONSE: most-actives - Status: 429 - Time: 1.349s
+2025-06-17 13:12:13,083 - fmp_api - ERROR - FMP API HTTP ERROR: most-actives - Status: 429
+2025-06-17 13:12:13,094 - stock_analytics - ERROR - Error in get_popular_stocks: 
+2025-06-17 13:12:13,135 - requests - INFO - RESPONSE: GET http://localhost:8000/api/popular-stocks - Status: 500 - Time: 1.404s
+2025-06-17 14:21:48,483 - requests - INFO - REQUEST: GET http://localhost:8000/api/company/TSLA - Client: 127.0.0.1
+2025-06-17 14:21:48,509 - stock_analytics - INFO - Company profile requested for ticker: TSLA
+2025-06-17 14:21:48,510 - fmp_api - INFO - FMP API REQUEST: profile
+2025-06-17 14:21:49,737 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/profile?symbol=TSLA&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 14:21:49,745 - fmp_api - INFO - FMP API RESPONSE: profile - Status: 200 - Time: 1.234s
+2025-06-17 14:21:49,755 - stock_analytics - INFO - Successfully returned company profile for TSLA: Tesla, Inc.
+2025-06-17 14:21:49,762 - requests - INFO - RESPONSE: GET http://localhost:8000/api/company/TSLA - Status: 200 - Time: 1.282s
+2025-06-17 14:21:49,803 - requests - INFO - REQUEST: GET http://localhost:8000/api/company/TSLA - Client: 127.0.0.1
+2025-06-17 14:21:49,804 - stock_analytics - INFO - Company profile requested for ticker: TSLA
+2025-06-17 14:21:49,804 - fmp_api - INFO - FMP API REQUEST: profile
+2025-06-17 14:21:50,087 - requests - INFO - REQUEST: GET http://localhost:8000/api/stock-prices/TSLA - Client: 127.0.0.1
+2025-06-17 14:21:50,091 - stock_analytics - INFO - Stock prices requested for ticker: TSLA, days: 30
+2025-06-17 14:21:50,093 - fmp_api - INFO - FMP API REQUEST: historical-price-eod/light
+2025-06-17 14:21:50,179 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/profile?symbol=TSLA&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 14:21:50,181 - requests - INFO - REQUEST: GET http://localhost:8000/api/key-metrics/TSLA - Client: 127.0.0.1
+2025-06-17 14:21:50,181 - fmp_api - INFO - FMP API RESPONSE: profile - Status: 200 - Time: 0.377s
+2025-06-17 14:21:50,181 - stock_analytics - INFO - Key metrics requested for ticker: TSLA
+2025-06-17 14:21:50,181 - fmp_api - INFO - FMP API REQUEST: key-metrics-ttm
+2025-06-17 14:21:50,190 - requests - INFO - REQUEST: GET http://localhost:8000/api/financial-scores/TSLA - Client: 127.0.0.1
+2025-06-17 14:21:50,190 - stock_analytics - INFO - Successfully returned company profile for TSLA: Tesla, Inc.
+2025-06-17 14:21:50,192 - stock_analytics - INFO - Financial scores requested for ticker: TSLA
+2025-06-17 14:21:50,192 - fmp_api - INFO - FMP API REQUEST: financial-scores
+2025-06-17 14:21:50,200 - requests - INFO - REQUEST: GET http://localhost:8000/api/analyst-estimates/TSLA?period=annual&limit=5 - Client: 127.0.0.1
+2025-06-17 14:21:50,208 - stock_analytics - INFO - Analyst estimates requested for ticker: TSLA, period: annual
+2025-06-17 14:21:50,208 - fmp_api - INFO - FMP API REQUEST: analyst-estimates
+2025-06-17 14:21:50,219 - requests - INFO - REQUEST: GET http://localhost:8000/api/financial-growth/TSLA?period=FY&limit=5 - Client: 127.0.0.1
+2025-06-17 14:21:50,226 - stock_analytics - INFO - Financial growth requested for ticker: TSLA, period: FY
+2025-06-17 14:21:50,226 - fmp_api - INFO - FMP API REQUEST: financial-growth
+2025-06-17 14:21:50,232 - requests - INFO - RESPONSE: GET http://localhost:8000/api/company/TSLA - Status: 200 - Time: 0.429s
+2025-06-17 14:21:50,484 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/financial-scores?symbol=TSLA&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 14:21:50,485 - fmp_api - INFO - FMP API RESPONSE: financial-scores - Status: 200 - Time: 0.293s
+2025-06-17 14:21:50,485 - stock_analytics - INFO - Successfully returned financial scores for TSLA
+2025-06-17 14:21:50,485 - requests - INFO - RESPONSE: GET http://localhost:8000/api/financial-scores/TSLA - Status: 200 - Time: 0.295s
+2025-06-17 14:21:50,486 - requests - INFO - REQUEST: GET http://localhost:8000/api/financial-scores/TSLA - Client: 127.0.0.1
+2025-06-17 14:21:50,486 - stock_analytics - INFO - Financial scores requested for ticker: TSLA
+2025-06-17 14:21:50,486 - fmp_api - INFO - FMP API REQUEST: financial-scores
+2025-06-17 14:21:50,494 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/historical-price-eod/light?symbol=TSLA&from=2025-05-18&to=2025-06-17&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 14:21:50,494 - fmp_api - INFO - FMP API RESPONSE: historical-price-eod/light - Status: 200 - Time: 0.359s
+2025-06-17 14:21:50,495 - stock_analytics - INFO - Successfully returned 21 price points for TSLA
+2025-06-17 14:21:50,496 - requests - INFO - RESPONSE: GET http://localhost:8000/api/stock-prices/TSLA - Status: 200 - Time: 0.412s
+2025-06-17 14:21:50,496 - requests - INFO - REQUEST: GET http://localhost:8000/api/stock-prices/TSLA - Client: 127.0.0.1
+2025-06-17 14:21:50,497 - stock_analytics - INFO - Stock prices requested for ticker: TSLA, days: 30
+2025-06-17 14:21:50,497 - fmp_api - INFO - FMP API REQUEST: historical-price-eod/light
+2025-06-17 14:21:50,528 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/key-metrics-ttm?symbol=TSLA&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 14:21:50,531 - fmp_api - INFO - FMP API RESPONSE: key-metrics-ttm - Status: 200 - Time: 0.349s
+2025-06-17 14:21:50,531 - stock_analytics - INFO - Successfully returned key metrics for TSLA
+2025-06-17 14:21:50,532 - requests - INFO - RESPONSE: GET http://localhost:8000/api/key-metrics/TSLA - Status: 200 - Time: 0.351s
+2025-06-17 14:21:50,532 - requests - INFO - REQUEST: GET http://localhost:8000/api/key-metrics/TSLA - Client: 127.0.0.1
+2025-06-17 14:21:50,532 - stock_analytics - INFO - Key metrics requested for ticker: TSLA
+2025-06-17 14:21:50,533 - fmp_api - INFO - FMP API REQUEST: key-metrics-ttm
+2025-06-17 14:21:50,554 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/financial-growth?symbol=TSLA&period=FY&limit=5&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 14:21:50,554 - fmp_api - INFO - FMP API RESPONSE: financial-growth - Status: 200 - Time: 0.328s
+2025-06-17 14:21:50,555 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/analyst-estimates?symbol=TSLA&period=annual&limit=5&page=0&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 14:21:50,555 - stock_analytics - INFO - Successfully returned 5 financial growth records for TSLA
+2025-06-17 14:21:50,556 - fmp_api - INFO - FMP API RESPONSE: analyst-estimates - Status: 200 - Time: 0.347s
+2025-06-17 14:21:50,556 - stock_analytics - INFO - Successfully returned 5 analyst estimates for TSLA
+2025-06-17 14:21:50,556 - requests - INFO - RESPONSE: GET http://localhost:8000/api/financial-growth/TSLA?period=FY&limit=5 - Status: 200 - Time: 0.337s
+2025-06-17 14:21:50,556 - requests - INFO - RESPONSE: GET http://localhost:8000/api/analyst-estimates/TSLA?period=annual&limit=5 - Status: 200 - Time: 0.357s
+2025-06-17 14:21:50,557 - requests - INFO - REQUEST: GET http://localhost:8000/api/financial-growth/TSLA?period=FY&limit=5 - Client: 127.0.0.1
+2025-06-17 14:21:50,558 - stock_analytics - INFO - Financial growth requested for ticker: TSLA, period: FY
+2025-06-17 14:21:50,558 - fmp_api - INFO - FMP API REQUEST: financial-growth
+2025-06-17 14:21:50,566 - requests - INFO - REQUEST: GET http://localhost:8000/api/analyst-estimates/TSLA?period=annual&limit=5 - Client: 127.0.0.1
+2025-06-17 14:21:50,566 - stock_analytics - INFO - Analyst estimates requested for ticker: TSLA, period: annual
+2025-06-17 14:21:50,566 - fmp_api - INFO - FMP API REQUEST: analyst-estimates
+2025-06-17 14:21:50,798 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/historical-price-eod/light?symbol=TSLA&from=2025-05-18&to=2025-06-17&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 14:21:50,799 - fmp_api - INFO - FMP API RESPONSE: historical-price-eod/light - Status: 200 - Time: 0.302s
+2025-06-17 14:21:50,799 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/key-metrics-ttm?symbol=TSLA&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 14:21:50,800 - stock_analytics - INFO - Successfully returned 21 price points for TSLA
+2025-06-17 14:21:50,801 - fmp_api - INFO - FMP API RESPONSE: key-metrics-ttm - Status: 200 - Time: 0.269s
+2025-06-17 14:21:50,802 - stock_analytics - INFO - Successfully returned key metrics for TSLA
+2025-06-17 14:21:50,802 - requests - INFO - RESPONSE: GET http://localhost:8000/api/stock-prices/TSLA - Status: 200 - Time: 0.306s
+2025-06-17 14:21:50,803 - requests - INFO - RESPONSE: GET http://localhost:8000/api/key-metrics/TSLA - Status: 200 - Time: 0.271s
+2025-06-17 14:21:50,952 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/financial-scores?symbol=TSLA&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 14:21:50,952 - fmp_api - INFO - FMP API RESPONSE: financial-scores - Status: 200 - Time: 0.466s
+2025-06-17 14:21:50,953 - stock_analytics - INFO - Successfully returned financial scores for TSLA
+2025-06-17 14:21:50,953 - requests - INFO - RESPONSE: GET http://localhost:8000/api/financial-scores/TSLA - Status: 200 - Time: 0.467s
+2025-06-17 14:21:50,988 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/financial-growth?symbol=TSLA&period=FY&limit=5&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 14:21:50,988 - fmp_api - INFO - FMP API RESPONSE: financial-growth - Status: 200 - Time: 0.431s
+2025-06-17 14:21:50,989 - stock_analytics - INFO - Successfully returned 5 financial growth records for TSLA
+2025-06-17 14:21:50,989 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/analyst-estimates?symbol=TSLA&period=annual&limit=5&page=0&apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 14:21:50,990 - fmp_api - INFO - FMP API RESPONSE: analyst-estimates - Status: 200 - Time: 0.423s
+2025-06-17 14:21:50,990 - requests - INFO - RESPONSE: GET http://localhost:8000/api/financial-growth/TSLA?period=FY&limit=5 - Status: 200 - Time: 0.433s
+2025-06-17 14:21:50,990 - stock_analytics - INFO - Successfully returned 5 analyst estimates for TSLA
+2025-06-17 14:21:50,990 - requests - INFO - RESPONSE: GET http://localhost:8000/api/analyst-estimates/TSLA?period=annual&limit=5 - Status: 200 - Time: 0.425s
+2025-06-17 14:21:57,556 - requests - INFO - REQUEST: OPTIONS http://localhost:8000/ - Client: 127.0.0.1
+2025-06-17 14:21:57,560 - requests - INFO - REQUEST: OPTIONS http://localhost:8000/ - Client: 127.0.0.1
+2025-06-17 14:21:57,561 - requests - INFO - RESPONSE: OPTIONS http://localhost:8000/ - Status: 200 - Time: 0.007s
+2025-06-17 14:21:57,562 - requests - INFO - RESPONSE: OPTIONS http://localhost:8000/ - Status: 200 - Time: 0.002s
+2025-06-17 14:21:57,720 - requests - INFO - REQUEST: GET http://localhost:8000/ - Client: 127.0.0.1
+2025-06-17 14:21:57,741 - stock_analytics - INFO - Health check requested
+2025-06-17 14:21:57,748 - requests - INFO - RESPONSE: GET http://localhost:8000/ - Status: 200 - Time: 0.029s
+2025-06-17 14:21:57,755 - requests - INFO - REQUEST: GET http://localhost:8000/ - Client: 127.0.0.1
+2025-06-17 14:21:57,755 - stock_analytics - INFO - Health check requested
+2025-06-17 14:21:57,756 - requests - INFO - REQUEST: OPTIONS http://localhost:8000/api/popular-stocks - Client: 127.0.0.1
+2025-06-17 14:21:57,757 - requests - INFO - RESPONSE: GET http://localhost:8000/ - Status: 200 - Time: 0.002s
+2025-06-17 14:21:57,758 - requests - INFO - RESPONSE: OPTIONS http://localhost:8000/api/popular-stocks - Status: 200 - Time: 0.001s
+2025-06-17 14:21:57,763 - requests - INFO - REQUEST: GET http://localhost:8000/api/popular-stocks - Client: 127.0.0.1
+2025-06-17 14:21:57,765 - stock_analytics - INFO - Popular stocks requested
+2025-06-17 14:21:57,765 - fmp_api - INFO - FMP API REQUEST: most-actives
+2025-06-17 14:21:58,153 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/most-actives?apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 14:21:58,153 - fmp_api - INFO - FMP API RESPONSE: most-actives - Status: 200 - Time: 0.388s
+2025-06-17 14:21:58,153 - stock_analytics - INFO - Successfully returned 6 popular stocks
+2025-06-17 14:21:58,154 - requests - INFO - RESPONSE: GET http://localhost:8000/api/popular-stocks - Status: 200 - Time: 0.390s
+2025-06-17 14:21:58,155 - requests - INFO - REQUEST: GET http://localhost:8000/api/popular-stocks - Client: 127.0.0.1
+2025-06-17 14:21:58,155 - stock_analytics - INFO - Popular stocks requested
+2025-06-17 14:21:58,155 - fmp_api - INFO - FMP API REQUEST: most-actives
+2025-06-17 14:21:58,578 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/most-actives?apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 14:21:58,578 - fmp_api - INFO - FMP API RESPONSE: most-actives - Status: 200 - Time: 0.423s
+2025-06-17 14:21:58,578 - stock_analytics - INFO - Successfully returned 6 popular stocks
+2025-06-17 14:21:58,578 - requests - INFO - RESPONSE: GET http://localhost:8000/api/popular-stocks - Status: 200 - Time: 0.423s
+2025-06-17 14:22:57,673 - requests - INFO - REQUEST: GET http://localhost:8000/ - Client: 127.0.0.1
+2025-06-17 14:22:57,678 - stock_analytics - INFO - Health check requested
+2025-06-17 14:22:57,680 - requests - INFO - RESPONSE: GET http://localhost:8000/ - Status: 200 - Time: 0.009s
+2025-06-17 14:22:57,689 - requests - INFO - REQUEST: GET http://localhost:8000/api/popular-stocks - Client: 127.0.0.1
+2025-06-17 14:22:57,689 - stock_analytics - INFO - Popular stocks requested
+2025-06-17 14:22:57,689 - fmp_api - INFO - FMP API REQUEST: most-actives
+2025-06-17 14:22:58,203 - httpx - INFO - HTTP Request: GET https://financialmodelingprep.com/stable/most-actives?apikey=Ztwufr7NjoIdHvbLFVFWP9i36SNTebZT "HTTP/1.1 200 OK"
+2025-06-17 14:22:58,204 - fmp_api - INFO - FMP API RESPONSE: most-actives - Status: 200 - Time: 0.514s
+2025-06-17 14:22:58,204 - stock_analytics - INFO - Successfully returned 6 popular stocks
+2025-06-17 14:22:58,205 - requests - INFO - RESPONSE: GET http://localhost:8000/api/popular-stocks - Status: 200 - Time: 0.516s
