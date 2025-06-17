@@ -45,33 +45,6 @@ A comprehensive stock analysis platform built with **Next.js 15**, **FastAPI**, 
 - Industry and sector classification
 - Company descriptions and website links
 
-## 🏗️ Project Structure
-
-\`\`\`
-stock-analytics-demo/
-├── frontend/                 # Next.js Frontend Application
-│   ├── app/                 # Next.js App Router
-│   │   ├── api/            # API Routes (fallback endpoints)
-│   │   ├── company/        # Company detail pages
-│   │   └── page.tsx        # Home page
-│   ├── components/         # React Components
-│   │   ├── ui/            # shadcn/ui components
-│   │   ├── stock-chart.tsx
-│   │   ├── financial-metrics.tsx
-│   │   ├── revenue-chart.tsx
-│   │   └── growth-projections-chart.tsx
-│   ├── lib/               # Utilities
-│   └── public/            # Static assets
-├── backend/               # FastAPI Backend Server
-│   ├── main.py           # FastAPI application
-│   ├── requirements.txt  # Python dependencies
-│   ├── logging_config.py # Advanced logging setup
-│   ├── Dockerfile       # Docker configuration
-│   ├── docker-compose.yml
-│   └── start_server.sh  # Startup script
-└── README.md
-\`\`\`
-
 ## 🛠️ Installation & Setup
 
 ### Prerequisites
