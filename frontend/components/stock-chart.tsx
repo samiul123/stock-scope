@@ -60,7 +60,7 @@ export default function StockChart({ ticker }: StockChartProps) {
         const response = await fetch(`${API_BASE_URL}/api/stock-prices/${ticker}`)
 
         if (!response.ok) {
-          throw new Error("Failed to fetch stock data")
+          throw new Error("Failed to fetch stock prices")
         }
 
         const stockData = await response.json()
@@ -68,9 +68,9 @@ export default function StockChart({ ticker }: StockChartProps) {
       } catch (error) {
         console.error("Error fetching stock data:", error)
         // Use fallback data
-        const fallbackData = getFallbackStockPrices(ticker)
-        setData(fallbackData)
-        setError("Using sample chart data")
+        // const fallbackData = getFallbackStockPrices(ticker)
+        // setData(fallbackData)
+        setError(error instanceof Error ? error.message : "Failed to load stock prices")
       } finally {
         setLoading(false)
       }

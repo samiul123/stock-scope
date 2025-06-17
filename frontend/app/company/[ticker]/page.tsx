@@ -276,7 +276,7 @@ export default function CompanyDetailPage() {
 
       <main className="container mx-auto px-4 py-8">
         {/* Backend Status Alert */}
-        {usingFallback && (
+        {/* {usingFallback && (
           <div className="mb-6">
             <Alert className="bg-yellow-900/20 border-yellow-600">
               <AlertCircle className="h-4 w-4 text-yellow-500" />
@@ -285,7 +285,7 @@ export default function CompanyDetailPage() {
               </AlertDescription>
             </Alert>
           </div>
-        )}
+        )} */}
 
         {/* Company Header */}
         <div className="mb-8">
@@ -303,11 +303,11 @@ export default function CompanyDetailPage() {
                   <Badge variant="secondary" className="bg-gray-700 text-gray-300">
                     {companyData.exchangeShortName}
                   </Badge>
-                  {usingFallback && (
+                  {/* {usingFallback && (
                     <Badge variant="secondary" className="bg-yellow-900 text-yellow-300">
                       Sample Data
                     </Badge>
-                  )}
+                  )} */}
                 </div>
               </div>
             </div>

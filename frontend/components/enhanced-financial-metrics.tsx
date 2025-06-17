@@ -63,11 +63,11 @@ export default function EnhancedFinancialMetrics({ ticker }: EnhancedFinancialMe
         }
 
         if (!metricsResponse.ok && !scoresResponse.ok) {
-          throw new Error("Failed to fetch financial data")
+          throw new Error("Failed to fetch financial metrics")
         }
       } catch (error) {
         console.error("Error fetching financial data:", error)
-        setError("Failed to load financial metrics")
+        setError(error instanceof Error ? error.message : "Failed to load financial metrics")
       } finally {
         setLoading(false)
       }
@@ -106,6 +106,16 @@ export default function EnhancedFinancialMetrics({ ticker }: EnhancedFinancialMe
           </CardContent>
         </Card>
       </div>
+    )
+  }
+
+  if (!keyMetrics && !financialScores) {
+    return (
+      <Card className="bg-gray-800/50 border-gray-700">
+        <CardContent className="p-6">
+          <p className="text-gray-400 flex items-center justify-center">No financial data available</p>
+        </CardContent>
+      </Card>
     )
   }
 

@@ -74,7 +74,7 @@ export default function HomePage() {
       }
     } catch (error) {
       console.error("Error fetching popular stocks:", error)
-      setBackendError("Backend service is not available. Using sample data.")
+      setBackendError("Service is not available.")
       setPopularStocks(FALLBACK_POPULAR_STOCKS)
     } finally {
       setLoadingPopular(false)
@@ -115,11 +115,14 @@ export default function HomePage() {
       <main className="container mx-auto px-4 py-16">
         {/* Backend Status Alert */}
         {backendError && (
-          <div className="max-w-4xl mx-auto mb-8">
-            <Alert className="bg-yellow-900/20 border-yellow-600">
+          <div className="w-fit mx-auto mb-8">
+            <Alert 
+              className="bg-yellow-900/20 border-yellow-600 pr-8" 
+              onClose={() => setBackendError("")}
+            >
               <AlertCircle className="h-4 w-4 text-yellow-500" />
               <AlertDescription className="text-yellow-200">
-                {backendError} To enable full functionality, start the FastAPI backend server.
+                {backendError}
               </AlertDescription>
             </Alert>
           </div>
@@ -210,7 +213,7 @@ export default function HomePage() {
           )}
         </div>
 
-        {/* Backend Setup Instructions */}
+        {/* Backend Setup Instructions
         {backendError && (
           <div className="max-w-4xl mx-auto mb-16">
             <Card className="bg-gray-800/30 border-gray-700">
@@ -243,7 +246,7 @@ export default function HomePage() {
               </CardContent>
             </Card>
           </div>
-        )}
+        )} */}
 
         {/* Features */}
         {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">

@@ -62,11 +62,11 @@ export default function GrowthProjectionsChart({ ticker }: GrowthProjectionsChar
         }
 
         if (!estimatesResponse.ok && !growthResponse.ok) {
-          throw new Error("Failed to fetch growth data")
+          throw new Error("Failed to fetch growth projections")
         }
       } catch (error) {
         console.error("Error fetching growth data:", error)
-        setError("Failed to load growth projections")
+        setError(error instanceof Error ? error.message : "Failed to load growth projections")
       } finally {
         setLoading(false)
       }
@@ -97,6 +97,16 @@ export default function GrowthProjectionsChart({ ticker }: GrowthProjectionsChar
           </CardContent>
         </Card>
       </div>
+    )
+  }
+
+  if (!estimates.length && !historicalGrowth.length) {
+    return (
+      <Card className="bg-gray-800/50 border-gray-700">
+        <CardContent className="p-6">
+          <p className="text-gray-400 flex items-center justify-center">No growth data available</p>
+        </CardContent>
+      </Card>
     )
   }
 
