@@ -12,6 +12,8 @@ from pydantic import BaseModel
 import asyncio
 from datetime import datetime, timedelta
 import json
+from dotenv import load_dotenv
+load_dotenv()
 
 # Configure logging
 def setup_logging():
